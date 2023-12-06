@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-// Function declarations
-char asciiToChar(int asciiCode);
-int sumOfNaturalNumbers(int n);
-int findGreatest(int num1, int num2);
-
 int main() {
     int choice;
 
@@ -20,32 +15,37 @@ int main() {
         printf("Enter your choice (1-4): ");
         scanf("%d", &choice);
 
+        // Variables for various cases
+        int asciiCode, n, num1, num2, result;
+
         // Switch case to perform the selected operation
         switch (choice) {
             case 1: {
-                int asciiCode;
+                // Conversion of ASCII code to char
                 printf("Enter ASCII code: ");
                 scanf("%d", &asciiCode);
-                printf("Corresponding character: %c\n", asciiToChar(asciiCode));
+                printf("Corresponding character: %c\n", (char)asciiCode);
                 break;
             }
             case 2: {
-                int n;
+                // Sum of n natural numbers
                 printf("Enter the value of n: ");
                 scanf("%d", &n);
-                printf("Sum of first %d natural numbers: %d\n", n, sumOfNaturalNumbers(n));
+                printf("Sum of first %d natural numbers: %d\n", n, (n * (n + 1)) / 2);
                 break;
             }
             case 3: {
-                int num1, num2;
+                // Finding the greatest among two entered numbers
                 printf("Enter the first number: ");
                 scanf("%d", &num1);
                 printf("Enter the second number: ");
                 scanf("%d", &num2);
-                printf("The greatest number is: %d\n", findGreatest(num1, num2));
+                result = (num1 > num2) ? num1 : num2;
+                printf("The greatest number is: %d\n", result);
                 break;
             }
             case 4: {
+                // Exiting the program
                 printf("Exiting the program. Goodbye!\n");
                 break;
             }
@@ -56,20 +56,5 @@ int main() {
     } while (choice != 4);
 
     return 0;
-}
-
-// Function to convert ASCII code to character
-char asciiToChar(int asciiCode) {
-    return (char)asciiCode;
-}
-
-// Function to find the sum of n natural numbers
-int sumOfNaturalNumbers(int n) {
-    return (n * (n + 1)) / 2;
-}
-
-// Function to find the greatest among two entered numbers
-int findGreatest(int num1, int num2) {
-    return (num1 > num2) ? num1 : num2;
 }
 
