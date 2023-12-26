@@ -1,17 +1,17 @@
 #include<stdio.h>
 int main(){
-	int a,b,c;
-	printf("Enter 3 number\n");
-	scanf("%d%d%d",&a,&b,&c);
-	if(a>b&&a>c){
-		printf("%d is greater",a);
+	int num;
+	printf("Enter a number\n");
+	scanf("%d",&num);
+	if(num<0){
+		printf("%d is negative",num);
 	}
 	else{
-		if(b>c){
-			printf("%d is greater",b);
+		if(num==0){
+			printf("%d is zero",num);
 		}
 		else{
-			printf("%d is greater",c);
+			printf("%d is positive",num);
 		}
 	}
 }
