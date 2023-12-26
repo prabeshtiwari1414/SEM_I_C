@@ -5,8 +5,8 @@ int main(){
 	printf(" 1) Additions \t 2) Subtractions\n 3) Multiplications \t 4) Division\n");
 	scanf("%d",&oper);
 	int x,y;
-			printf("Enter 2 number\n");
-			scanf("%d%d",&x,&y);
+	printf("Enter 2 number\n");
+	scanf("%d%d",&x,&y);
 	switch (oper){
 		case 1: {
 			
