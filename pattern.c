@@ -1,17 +1,18 @@
 #include<stdio.h>
-int main(){
-	int num[10], i;
-	float sum=0; 
-	printf("Enter 10 number\n");
-	for(i=0;i<10;i++){
-		scanf("%d",&num[i]);
-		sum=sum+num[i];
+
+int main() {
+    int i, j, k;
+    for(i=3;i>=1;i--){
+    	for(k=i;k>1;k--){
+    		printf("\t");
+		}
+		for(j=3;j>=i;j--){
+			printf("%d",i);
+		}
+		printf("\n");
 	}
-	printf("Enter number is:\n");
-	for(i=0;i<10;i++){
-		printf("%d\n",num[i]);
-	}
-	float avg = sum/10;
-	printf("SUM is :%f \nAVG is %f",sum,avg);
-	return 0;
+    
+
+    return 0;
 }
+
