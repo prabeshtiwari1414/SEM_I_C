@@ -14,6 +14,5 @@ int main(){
 			printf("%d\t",m[i][j]);
 		}
 		printf("\n");
-	}
-	return 0;
+	}return 0;
 }
