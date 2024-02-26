@@ -17,9 +17,10 @@ int main(){
 		printf(" \n Marks :");
 		scanf("%f",&st[i].marks);
 	}
-	printf("Details are:\n");
+	printf("Name\t\tRoll no\t\tMarks\t\t\n");
+	printf("---------------------------------------------------------------\n");
 	for(i=1;i<=num;i++){
-		printf("Enter student%d :\n Name: %s \n Roll no :%d\n Marks:%f\n",num,st[i].name,st[i].rollno,st[i].marks);
+		printf("%s\t\t%d\t\t%f\t\t\n",st[i].name,st[i].rollno,st[i].marks);
 		
 		
 	}
