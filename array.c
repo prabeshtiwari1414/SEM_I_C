@@ -11,8 +11,8 @@ int main(){
 	for(i=0;i<10;i++){
 		printf("%d\n",num[i]);
 	}
-	float avg = sumfloat(sum)/10;
+	float avg = sum/10;
 	printf("SUM is :%f \nAVG is %f",sum,avg);
-	return 0;
+	return 1;
 }	
-}
+
